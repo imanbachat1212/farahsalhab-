@@ -69,11 +69,6 @@ export default function Services() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary-900/60 via-primary-800/20 to-transparent" />
 
-                {/* Icon */}
-                <div className="absolute top-4 left-4 w-10 h-10 rounded-xl bg-white/20 backdrop-blur-sm flex items-center justify-center text-xl border border-white/30">
-                  {service.icon}
-                </div>
-
                 {/* Number */}
                 <div className="absolute top-4 right-4 font-display font-extrabold text-white/30 text-4xl leading-none">
                   {String(idx + 1).padStart(2, '0')}
