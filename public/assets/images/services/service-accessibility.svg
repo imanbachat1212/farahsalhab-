@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#481093"/>
+      <stop offset="50%" stop-color="#2d0663"/>
+      <stop offset="100%" stop-color="#6a14de"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="300" fill="url(#bg)"/>
+  <!-- radiating rings from center -->
+  <circle cx="300" cy="150" r="200" fill="none" stroke="#8b3dff" stroke-width="1" opacity="0.2"/>
+  <circle cx="300" cy="150" r="155" fill="none" stroke="#8b3dff" stroke-width="1" opacity="0.3"/>
+  <circle cx="300" cy="150" r="110" fill="none" stroke="#a86bff" stroke-width="1.5" opacity="0.4"/>
+  <circle cx="300" cy="150" r="70" fill="none" stroke="#c39bff" stroke-width="2" opacity="0.5"/>
+  <circle cx="300" cy="150" r="35" fill="none" stroke="#fcd97a" stroke-width="2" opacity="0.6"/>
+  <!-- center glow -->
+  <circle cx="300" cy="150" r="18" fill="#fcd97a" opacity="0.9"/>
+  <circle cx="300" cy="150" r="10" fill="white" opacity="0.7"/>
+  <!-- person silhouette simplified -->
+  <circle cx="300" cy="62" r="14" fill="none" stroke="#fcd97a" stroke-width="2" opacity="0.6"/>
+  <!-- arms open (accessibility symbol) -->
+  <line x1="260" y1="88" x2="300" y2="78" stroke="#fcd97a" stroke-width="2" opacity="0.5" stroke-linecap="round"/>
+  <line x1="340" y1="88" x2="300" y2="78" stroke="#fcd97a" stroke-width="2" opacity="0.5" stroke-linecap="round"/>
+  <!-- accent dots scattered -->
+  <circle cx="100" cy="50" r="3" fill="#fcd97a" opacity="0.3"/>
+  <circle cx="500" cy="250" r="3" fill="#fcd97a" opacity="0.3"/>
+  <circle cx="550" cy="100" r="2" fill="#c39bff" opacity="0.4"/>
+  <circle cx="50" cy="200" r="2" fill="#c39bff" opacity="0.4"/>
+</svg>

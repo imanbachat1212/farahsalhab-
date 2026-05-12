@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2d0663"/>
+      <stop offset="40%" stop-color="#5812b5"/>
+      <stop offset="100%" stop-color="#8b3dff"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="300" fill="url(#bg)"/>
+  <!-- target rings -->
+  <circle cx="300" cy="150" r="130" fill="none" stroke="#8b3dff" stroke-width="1.5" opacity="0.35"/>
+  <circle cx="300" cy="150" r="100" fill="none" stroke="#a86bff" stroke-width="1.5" opacity="0.45"/>
+  <circle cx="300" cy="150" r="70"  fill="none" stroke="#c39bff" stroke-width="2"   opacity="0.55"/>
+  <circle cx="300" cy="150" r="42"  fill="none" stroke="#fcd97a" stroke-width="2"   opacity="0.65"/>
+  <circle cx="300" cy="150" r="18"  fill="#fcd97a" opacity="0.9"/>
+  <circle cx="300" cy="150" r="8"   fill="white"   opacity="0.8"/>
+  <!-- crosshair lines -->
+  <line x1="300" y1="10"  x2="300" y2="100" stroke="#c39bff" stroke-width="1.5" opacity="0.5" stroke-dasharray="4 4"/>
+  <line x1="300" y1="200" x2="300" y2="290" stroke="#c39bff" stroke-width="1.5" opacity="0.5" stroke-dasharray="4 4"/>
+  <line x1="160" y1="150" x2="250" y2="150" stroke="#c39bff" stroke-width="1.5" opacity="0.5" stroke-dasharray="4 4"/>
+  <line x1="350" y1="150" x2="440" y2="150" stroke="#c39bff" stroke-width="1.5" opacity="0.5" stroke-dasharray="4 4"/>
+  <!-- arrow coming in from top-right -->
+  <line x1="480" y1="40" x2="330" y2="138" stroke="#fcd97a" stroke-width="2.5" opacity="0.7" stroke-linecap="round"/>
+  <polygon points="325,128 340,142 348,126" fill="#fcd97a" opacity="0.7"/>
+  <!-- scatter dots -->
+  <circle cx="80"  cy="50"  r="3" fill="#fcd97a" opacity="0.3"/>
+  <circle cx="520" cy="260" r="3" fill="#fcd97a" opacity="0.3"/>
+  <circle cx="540" cy="60"  r="2" fill="#c39bff" opacity="0.35"/>
+  <circle cx="60"  cy="240" r="2" fill="#c39bff" opacity="0.35"/>
+</svg>

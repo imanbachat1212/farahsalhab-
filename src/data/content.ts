@@ -47,15 +47,19 @@ export const media = [
     id: 1,
     title: 'DW Akademie – Safe and Loud Project – Tips to Combat GBVO',
     description: 'Farah shares practical insights on combating gender-based violence online.',
-    embedId: 'dQw4w9WgXcQ', // placeholder – replace with real YouTube ID
-    thumbnail: '/assets/images/seo/workplace-diversity-gender-inclusion-expert.jpeg',
+    type: 'youtube' as const,
+    embedId: 'DuA9FhqiaSk',
+    url: '',
+    thumbnail: 'https://img.youtube.com/vi/DuA9FhqiaSk/maxresdefault.jpg',
   },
   {
     id: 2,
     title: 'AUB – GHI Reel: How Climate Change Affects Health in MENA',
     description: 'Featuring Farah on the gendered impacts of climate change in the MENA region.',
-    embedId: 'dQw4w9WgXcQ', // placeholder – replace with real YouTube ID
-    thumbnail: '/assets/images/seo/strategy-development-gender-inclusion-expert.jpeg',
+    type: 'instagram' as const,
+    embedId: '',
+    url: 'https://www.instagram.com/reel/DMdN1cbMBYb/',
+    thumbnail: '/assets/images/services/media-aub-climate.svg',
   },
 ]
 
@@ -67,7 +71,7 @@ export const services = [
     description:
       'Comprehensive diversity, equity, and inclusion strategies for international organizations, local NGOs, and corporations.',
     icon: '🏢',
-    image: '/assets/images/seo/workplace-diversity-gender-inclusion-expert.jpeg',
+    image: '/assets/images/services/service-dei.svg',
     imageAlt: 'Diversity solutions by Gender and Inclusion Expert for global organizations.',
     keywords: ['DEI Strategy', 'Policy Development', 'Bias Training'],
   },
@@ -77,7 +81,7 @@ export const services = [
     description:
       'Thorough accessibility assessments for institutions and organizations to ensure inclusive access for all.',
     icon: '♿',
-    image: '/assets/images/seo/accessibility-assessment-gender-inclusion-expert.jpeg',
+    image: '/assets/images/services/service-accessibility.svg',
     imageAlt: 'Accessibility audits by Gender and Inclusion Expert for institutions.',
     keywords: ['Disability Inclusion', 'Institutional Audit', 'Universal Design'],
   },
@@ -87,7 +91,7 @@ export const services = [
     description:
       'Design of gender-responsive social work plans addressing intersecting vulnerabilities and community needs.',
     icon: '📋',
-    image: '/assets/images/seo/social-work-plans-gender-inclusion-expert.jpeg',
+    image: '/assets/images/services/service-social-work.svg',
     imageAlt: 'Social work plan design by Gender and Inclusion Expert.',
     keywords: ['Program Design', 'Community Engagement', 'Intersectionality'],
   },
@@ -97,7 +101,7 @@ export const services = [
     description:
       'Multi-year strategies crafting with focus on gender, accessibility, and inclusion advancement for lasting impact.',
     icon: '🎯',
-    image: '/assets/images/seo/strategy-development-gender-inclusion-expert.jpeg',
+    image: '/assets/images/services/service-strategy.svg',
     imageAlt: 'Strategy development by Gender and Inclusion Expert for inclusion and equity.',
     keywords: ['Multi-year Planning', 'Gender Mainstreaming', 'Accountability'],
   },
@@ -107,7 +111,7 @@ export const services = [
     description:
       'Specialized guidance for proposal writing, log frames, feminist M&E, and Theory of Change using MSC and Outcome Harvesting.',
     icon: '✍️',
-    image: '/assets/images/seo/proposal-guidance-gender-inclusion-expert.jpeg',
+    image: '/assets/images/services/service-proposal.svg',
     imageAlt: 'Proposal and feminist M&E guidance by Gender and Inclusion Expert.',
     keywords: ['Logframe', 'Theory of Change', 'Outcome Harvesting', 'MSC'],
   },
@@ -117,7 +121,7 @@ export const services = [
     description:
       'Tailored individual coaching plans for professionals seeking to deepen their gender and inclusion practice.',
     icon: '🌱',
-    image: '/assets/images/seo/individual-coaching-gender-inclusion-expert.jpeg',
+    image: '/assets/images/services/service-coaching.svg',
     imageAlt: 'Individual coaching plans by Gender and Inclusion Expert.',
     keywords: ['Professional Development', 'Mentoring', 'Capacity Building'],
   },
@@ -127,7 +131,7 @@ export const services = [
     description:
       'Gender, youth, and social inclusion thematic analyses (GEDI/GESI) with actionable recommendations for equitable programs.',
     icon: '🔍',
-    image: '/assets/images/seo/gender-social-inclusion-analysis-expert.jpeg',
+    image: '/assets/images/services/service-analysis.svg',
     imageAlt: 'Social inclusion analysis by Gender and Inclusion Expert.',
     keywords: ['GEDI Analysis', 'GESI Framework', 'Thematic Research'],
   },
@@ -137,7 +141,7 @@ export const services = [
     description:
       'Custom toolkits for I/NGOs promoting gender, diversity, accessibility, and inclusion – tailored to organizational context.',
     icon: '🛠️',
-    image: '/assets/images/seo/custom-toolkits-gender-inclusion-expert.jpeg',
+    image: '/assets/images/services/service-toolkits.svg',
     imageAlt: 'Custom toolkits by Gender and Inclusion Expert for NGOs.',
     keywords: ['Resource Development', 'Knowledge Products', 'Training Materials'],
   },
@@ -147,7 +151,7 @@ export const services = [
     description:
       "Training and online course materials aligned with teams' needs, building lasting internal gender and inclusion capacity.",
     icon: '📚',
-    image: '/assets/images/seo/training-courses-gender-inclusion-expert.jpeg',
+    image: '/assets/images/services/service-training.svg',
     imageAlt: 'Training and courses tailored by Gender and Inclusion Expert.',
     keywords: ['Capacity Building', 'Facilitation', 'E-learning'],
   },

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 338">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2d0663"/>
+      <stop offset="50%" stop-color="#481093"/>
+      <stop offset="100%" stop-color="#7c22f5"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="338" fill="url(#bg)"/>
+
+  <!-- Sun glow -->
+  <circle cx="470" cy="85" r="80" fill="#f0a500" opacity="0.08"/>
+  <circle cx="470" cy="85" r="50" fill="#fcd97a" opacity="0.12"/>
+  <circle cx="470" cy="85" r="32" fill="#f0a500" opacity="0.9"/>
+  <circle cx="470" cy="85" r="20" fill="#fcd97a" opacity="0.95"/>
+
+  <!-- Sun rays -->
+  <line x1="470" y1="40"  x2="470" y2="28"  stroke="#fcd97a" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+  <line x1="470" y1="130" x2="470" y2="142" stroke="#fcd97a" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+  <line x1="425" y1="85"  x2="413" y2="85"  stroke="#fcd97a" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+  <line x1="515" y1="85"  x2="527" y2="85"  stroke="#fcd97a" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+  <line x1="438" y1="52"  x2="429" y2="43"  stroke="#fcd97a" stroke-width="2.5" stroke-linecap="round" opacity="0.65"/>
+  <line x1="502" y1="118" x2="511" y2="127" stroke="#fcd97a" stroke-width="2.5" stroke-linecap="round" opacity="0.65"/>
+  <line x1="502" y1="52"  x2="511" y2="43"  stroke="#fcd97a" stroke-width="2.5" stroke-linecap="round" opacity="0.65"/>
+  <line x1="438" y1="118" x2="429" y2="127" stroke="#fcd97a" stroke-width="2.5" stroke-linecap="round" opacity="0.65"/>
+
+  <!-- Globe -->
+  <circle cx="210" cy="190" r="90" fill="#481093" opacity="0.4"/>
+  <circle cx="210" cy="190" r="90" fill="none" stroke="#8b3dff" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Globe latitude lines -->
+  <ellipse cx="210" cy="190" rx="90" ry="22" fill="none" stroke="#c39bff" stroke-width="1" opacity="0.3"/>
+  <ellipse cx="210" cy="158" rx="78" ry="16" fill="none" stroke="#c39bff" stroke-width="1" opacity="0.25"/>
+  <ellipse cx="210" cy="222" rx="78" ry="16" fill="none" stroke="#c39bff" stroke-width="1" opacity="0.25"/>
+  <ellipse cx="210" cy="190" rx="22" ry="90" fill="none" stroke="#c39bff" stroke-width="1" opacity="0.3"/>
+
+  <!-- MENA region highlight -->
+  <path d="M 238 138 Q 262 128 272 150 Q 280 168 262 180 Q 248 188 236 175 Q 222 162 228 148 Z"
+        fill="#fcd97a" fill-opacity="0.2" stroke="#fcd97a" stroke-width="1.5" stroke-opacity="0.6"/>
+
+  <!-- Heat waves rising from globe top -->
+  <path d="M 148 112 Q 165 96 182 112" fill="none" stroke="#f0a500" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+  <path d="M 158 96  Q 175 78 192 96"  fill="none" stroke="#f0a500" stroke-width="1.5" stroke-linecap="round" opacity="0.35"/>
+  <path d="M 168 80  Q 185 60 202 80"  fill="none" stroke="#fcd97a" stroke-width="1.5" stroke-linecap="round" opacity="0.25"/>
+
+  <!-- Health cross -->
+  <rect x="368" y="175" width="34" height="10" rx="3" fill="#c39bff" opacity="0.55"/>
+  <rect x="380" y="163" width="10" height="34" rx="3" fill="#c39bff" opacity="0.55"/>
+
+  <!-- Dashed line from globe to sun -->
+  <line x1="298" y1="148" x2="438" y2="96" stroke="#fcd97a" stroke-width="1" stroke-dasharray="5 4" opacity="0.2"/>
+
+  <!-- Bottom band -->
+  <rect x="0" y="268" width="600" height="70" fill="#2d0663" opacity="0.75"/>
+  <rect x="30" y="283" width="170" height="8" rx="4" fill="#fcd97a" opacity="0.8"/>
+  <rect x="30" y="299" width="300" height="6" rx="3" fill="#c39bff" opacity="0.55"/>
+  <rect x="30" y="313" width="210" height="5" rx="3" fill="#c39bff" opacity="0.4"/>
+  <rect x="494" y="282" width="76" height="24" rx="12" fill="#fcd97a" fill-opacity="0.15" stroke="#fcd97a" stroke-width="1.5"/>
+  <rect x="506" y="290" width="52" height="6"  rx="3" fill="#fcd97a" opacity="0.75"/>
+
+  <!-- Scatter dots -->
+  <circle cx="60"  cy="40"  r="2.5" fill="#fcd97a" opacity="0.25"/>
+  <circle cx="540" cy="290" r="2.5" fill="#fcd97a" opacity="0.25"/>
+  <circle cx="560" cy="50"  r="2"   fill="#c39bff" opacity="0.3"/>
+  <circle cx="40"  cy="270" r="2"   fill="#c39bff" opacity="0.3"/>
+</svg>

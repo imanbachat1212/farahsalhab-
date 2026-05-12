@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2d0663"/>
+      <stop offset="60%" stop-color="#481093"/>
+      <stop offset="100%" stop-color="#6a14de"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="300" fill="url(#bg)"/>
+  <!-- document shape -->
+  <rect x="195" y="55" width="210" height="195" rx="8" fill="#481093" stroke="#8b3dff" stroke-width="1.5" opacity="0.8"/>
+  <!-- folded corner -->
+  <polygon points="365,55 405,95 365,95" fill="#2d0663" stroke="#8b3dff" stroke-width="1" opacity="0.8"/>
+  <polygon points="365,55 405,95 365,95" fill="#a86bff" opacity="0.2"/>
+  <!-- text lines -->
+  <rect x="220" y="115" width="130" height="6" rx="3" fill="#fcd97a" opacity="0.75"/>
+  <rect x="220" y="133" width="155" height="5" rx="2.5" fill="#c39bff" opacity="0.5"/>
+  <rect x="220" y="148" width="140" height="5" rx="2.5" fill="#c39bff" opacity="0.5"/>
+  <rect x="220" y="163" width="160" height="5" rx="2.5" fill="#c39bff" opacity="0.5"/>
+  <rect x="220" y="178" width="120" height="5" rx="2.5" fill="#c39bff" opacity="0.4"/>
+  <rect x="220" y="198" width="145" height="5" rx="2.5" fill="#c39bff" opacity="0.35"/>
+  <rect x="220" y="213" width="130" height="5" rx="2.5" fill="#c39bff" opacity="0.35"/>
+  <!-- gold accent bar top -->
+  <rect x="220" y="78" width="90" height="24" rx="4" fill="#fcd97a" fill-opacity="0.15" stroke="#fcd97a" stroke-width="1" stroke-opacity="0.5"/>
+  <rect x="224" y="83" width="55" height="5"  rx="2" fill="#fcd97a" opacity="0.7"/>
+  <!-- scatter dots outside -->
+  <circle cx="100" cy="80"  r="3" fill="#fcd97a" opacity="0.3"/>
+  <circle cx="500" cy="220" r="3" fill="#fcd97a" opacity="0.3"/>
+  <circle cx="520" cy="70"  r="2" fill="#c39bff" opacity="0.4"/>
+  <circle cx="80"  cy="230" r="2" fill="#c39bff" opacity="0.4"/>
+  <circle cx="150" cy="160" r="40" fill="#8b3dff" opacity="0.07"/>
+  <circle cx="450" cy="140" r="40" fill="#8b3dff" opacity="0.07"/>
+</svg>

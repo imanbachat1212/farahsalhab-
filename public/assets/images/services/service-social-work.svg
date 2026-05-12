@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300">
+  <defs>
+    <linearGradient id="bg" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7c22f5"/>
+      <stop offset="50%" stop-color="#481093"/>
+      <stop offset="100%" stop-color="#2d0663"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="300" fill="url(#bg)"/>
+  <!-- network connection lines -->
+  <line x1="300" y1="150" x2="160" y2="80"  stroke="#c39bff" stroke-width="1.5" opacity="0.4"/>
+  <line x1="300" y1="150" x2="440" y2="80"  stroke="#c39bff" stroke-width="1.5" opacity="0.4"/>
+  <line x1="300" y1="150" x2="160" y2="220" stroke="#c39bff" stroke-width="1.5" opacity="0.4"/>
+  <line x1="300" y1="150" x2="440" y2="220" stroke="#c39bff" stroke-width="1.5" opacity="0.4"/>
+  <line x1="300" y1="150" x2="300" y2="50"  stroke="#c39bff" stroke-width="1.5" opacity="0.4"/>
+  <line x1="300" y1="150" x2="300" y2="250" stroke="#c39bff" stroke-width="1.5" opacity="0.4"/>
+  <line x1="300" y1="150" x2="80"  y2="150" stroke="#c39bff" stroke-width="1.5" opacity="0.4"/>
+  <line x1="300" y1="150" x2="520" y2="150" stroke="#c39bff" stroke-width="1.5" opacity="0.4"/>
+  <!-- outer nodes -->
+  <circle cx="160" cy="80"  r="16" fill="#481093" stroke="#a86bff" stroke-width="2" opacity="0.9"/>
+  <circle cx="440" cy="80"  r="16" fill="#481093" stroke="#a86bff" stroke-width="2" opacity="0.9"/>
+  <circle cx="160" cy="220" r="16" fill="#481093" stroke="#a86bff" stroke-width="2" opacity="0.9"/>
+  <circle cx="440" cy="220" r="16" fill="#481093" stroke="#a86bff" stroke-width="2" opacity="0.9"/>
+  <circle cx="300" cy="50"  r="12" fill="#481093" stroke="#c39bff" stroke-width="1.5" opacity="0.8"/>
+  <circle cx="300" cy="250" r="12" fill="#481093" stroke="#c39bff" stroke-width="1.5" opacity="0.8"/>
+  <circle cx="80"  cy="150" r="12" fill="#481093" stroke="#c39bff" stroke-width="1.5" opacity="0.8"/>
+  <circle cx="520" cy="150" r="12" fill="#481093" stroke="#c39bff" stroke-width="1.5" opacity="0.8"/>
+  <!-- center node gold -->
+  <circle cx="300" cy="150" r="28" fill="#2d0663" stroke="#fcd97a" stroke-width="2.5"/>
+  <circle cx="300" cy="150" r="16" fill="#fcd97a" opacity="0.9"/>
+</svg>

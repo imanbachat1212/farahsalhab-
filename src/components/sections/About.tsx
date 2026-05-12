@@ -1,4 +1,4 @@
-import { CheckCircle2, GraduationCap, ExternalLink } from 'lucide-react'
+import { CheckCircle2, ExternalLink } from 'lucide-react'
 import { about } from '@/data/content'
 
 export default function About() {
@@ -28,16 +28,6 @@ export default function About() {
               {/* Overlay gradient */}
               <div className="absolute inset-0 bg-gradient-to-t from-primary-900/40 via-transparent to-transparent" />
 
-              {/* Education badge */}
-              <div className="absolute bottom-6 left-6 right-6 glass-dark rounded-2xl p-4">
-                <div className="flex items-start gap-3">
-                  <GraduationCap className="text-gold-300 mt-0.5 shrink-0" size={20} />
-                  <div>
-                    <p className="text-white font-semibold text-sm">MA Gender, Sexuality &amp; Global Politics</p>
-                    <p className="text-white/70 text-xs mt-0.5">SOAS, University of London · In Progress</p>
-                  </div>
-                </div>
-              </div>
             </div>
 
             {/* Stats cards */}
@@ -82,9 +72,10 @@ export default function About() {
               <meta itemProp="workLocation" content="Beirut, Lebanon" />
 
               <p className="text-fluid-base">
-                <span itemProp="name" className="font-semibold text-neutral-900">Farah Salhab</span>{' '}
-                is an{' '}
-                <span itemProp="jobTitle">intersectional feminist and inclusion strategist</span>{' '}
+                I am{' '}
+                <span itemProp="name" className="font-semibold text-neutral-900">Farah Salhab</span>,
+                an{' '}
+                <span itemProp="jobTitle">Intersectional Feminist and Inclusion strategist</span>{' '}
                 with{' '}
                 <strong className="text-neutral-800">15 years of experience</strong>{' '}
                 navigating the space between theory and lived realities across{' '}
@@ -92,19 +83,10 @@ export default function About() {
               </p>
 
               <p className="text-fluid-base">
-                Her work focuses on turning feminist thinking into practice through gender-transformative
+                My work focuses on turning feminist thinking into practice through gender-transformative
                 strategies, feminist M&amp;E, capacity building, and GEDI/GESI analysis. Since 2018,
-                she has led gender equality components within multi-million-dollar consortia, shaping
+                I've led gender equality components within multi-million-dollar consortia, shaping
                 evidence-based approaches that challenge norms while staying grounded in context and care.
-              </p>
-
-              <p className="text-fluid-base">
-                Currently pursuing an{' '}
-                <span itemProp="alumniOf" itemScope itemType="https://schema.org/EducationalOrganization">
-                  <span className="font-semibold text-neutral-800">MA in Gender, Sexuality, and Global Politics</span>
-                  {' '}at{' '}
-                  <span itemProp="name">SOAS, University of London</span>
-                </span>.
               </p>
             </div>
 

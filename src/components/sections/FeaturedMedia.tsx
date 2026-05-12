@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Play, X } from 'lucide-react'
+import { Play, X, Instagram } from 'lucide-react'
 import { media } from '@/data/content'
 
 function VideoModal({ embedId, title, onClose }: { embedId: string; title: string; onClose: () => void }) {
@@ -64,15 +64,17 @@ export default function FeaturedMedia() {
 
         {/* Video grid */}
         <div className="grid md:grid-cols-2 gap-8">
-          {media.map((item) => (
+          {media.map((item) => {
+            const isInstagram = item.type === 'instagram'
+            return (
             <article
               key={item.id}
               className="card overflow-hidden group cursor-pointer"
-              onClick={() => setActiveVideo(item)}
-              onKeyDown={(e) => e.key === 'Enter' && setActiveVideo(item)}
+              onClick={() => isInstagram ? window.open(item.url, '_blank', 'noopener') : setActiveVideo(item)}
+              onKeyDown={(e) => e.key === 'Enter' && (isInstagram ? window.open(item.url, '_blank', 'noopener') : setActiveVideo(item))}
               tabIndex={0}
               role="button"
-              aria-label={`Play video: ${item.title}`}
+              aria-label={isInstagram ? `View on Instagram: ${item.title}` : `Play video: ${item.title}`}
               itemScope
               itemType="https://schema.org/VideoObject"
             >
@@ -88,10 +90,13 @@ export default function FeaturedMedia() {
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-primary-900/40 group-hover:bg-primary-900/30 transition-colors duration-300" />
 
-                {/* Play button */}
+                {/* Play / Instagram button */}
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="w-16 h-16 rounded-full bg-white/90 shadow-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <Play size={24} className="text-primary-700 ml-1" fill="currentColor" />
+                    {isInstagram
+                      ? <Instagram size={26} className="text-primary-700" />
+                      : <Play size={24} className="text-primary-700 ml-1" fill="currentColor" />
+                    }
                   </div>
                 </div>
               </div>
@@ -108,12 +113,15 @@ export default function FeaturedMedia() {
                   {item.description}
                 </p>
                 <div className="flex items-center gap-2 pt-1 text-primary-600 font-semibold text-sm">
-                  <Play size={14} fill="currentColor" />
-                  Watch Video
+                  {isInstagram
+                    ? <><Instagram size={14} /> View on Instagram</>
+                    : <><Play size={14} fill="currentColor" /> Watch Video</>
+                  }
                 </div>
               </div>
             </article>
-          ))}
+            )
+          })}
         </div>
       </div>
 
