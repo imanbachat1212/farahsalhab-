@@ -120,46 +120,6 @@ export default function Testimonials() {
             </div>
           </div>
 
-          {/* All testimonials grid (visible on larger screens for SEO) */}
-          <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {testimonials.map((t, i) => (
-              <button
-                key={t.id}
-                onClick={() => setActive(i)}
-                className={`text-left rounded-2xl p-5 transition-all duration-300 cursor-pointer ${
-                  i === active
-                    ? 'bg-primary-600 text-white shadow-glow-purple'
-                    : 'bg-white shadow-card hover:shadow-card-hover hover:-translate-y-0.5'
-                }`}
-                aria-pressed={i === active}
-                aria-label={`View testimonial from ${t.name}`}
-              >
-                <div className="flex items-center gap-3 mb-3">
-                  <img
-                    src={t.image}
-                    alt={t.imageAlt}
-                    className={`w-10 h-10 rounded-full object-cover border-2 ${
-                      i === active ? 'border-white/30' : 'border-primary-100'
-                    }`}
-                    loading="lazy"
-                  />
-                  <div>
-                    <p className={`font-bold text-sm ${i === active ? 'text-white' : 'text-neutral-900'}`}>
-                      {t.name}
-                    </p>
-                    <p className={`text-xs ${i === active ? 'text-white/70' : 'text-primary-600'}`}>
-                      {t.org || t.role}
-                    </p>
-                  </div>
-                </div>
-                <p className={`text-xs leading-relaxed line-clamp-3 ${
-                  i === active ? 'text-white/85' : 'text-neutral-500'
-                }`}>
-                  "{t.quote}"
-                </p>
-              </button>
-            ))}
-          </div>
         </div>
       </div>
     </section>
