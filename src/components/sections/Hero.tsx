@@ -1,4 +1,4 @@
-import { ArrowRight, Download, MapPin, Award, Users } from 'lucide-react'
+import { ArrowRight, Download, MapPin, Award, Users, Handshake } from 'lucide-react'
 import { hero } from '@/data/content'
 
 export default function Hero() {
@@ -58,9 +58,10 @@ export default function Hero() {
             {/* Stats row */}
             <div className="flex flex-wrap gap-6 pt-2">
               {[
-                { icon: Award,  value: '15+', label: 'Years Experience' },
-                { icon: Users,  value: '27+', label: 'Partner Orgs' },
-                { icon: MapPin, value: 'MENA', label: 'Focus Region' },
+                { icon: Award,     value: '15+',  label: 'Years Experience' },
+                { icon: Users,     value: '27+',  label: 'Partner Orgs' },
+                { icon: MapPin,    value: 'MENA', label: 'Focus Region' },
+                { icon: Handshake, value: '100+', label: 'Partners Supported' },
               ].map((stat) => (
                 <div key={stat.label} className="flex items-center gap-2.5">
                   <div className="p-1.5 rounded-lg bg-white/15">
