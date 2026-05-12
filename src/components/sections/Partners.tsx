@@ -1,6 +1,36 @@
 import { partners } from '@/data/content'
 
+function LogoCard({ partner }: { partner: typeof partners[0] }) {
+  return (
+    <div
+      className="group flex-shrink-0 flex items-center justify-center w-28 h-20 mx-3 rounded-2xl bg-neutral-50 border border-neutral-100 hover:border-primary-200 hover:bg-primary-50 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md"
+      title={partner.name}
+    >
+      <img
+        src={partner.logo}
+        alt={partner.alt}
+        className="w-full h-full object-contain max-h-12 px-3 filter grayscale group-hover:grayscale-0 transition-all duration-300 opacity-60 group-hover:opacity-100"
+        loading="lazy"
+        onError={(e) => {
+          const target = e.target as HTMLImageElement
+          target.style.display = 'none'
+          const parent = target.parentElement
+          if (parent) {
+            const span = document.createElement('span')
+            span.className = 'text-xs text-neutral-500 font-medium text-center leading-tight px-2'
+            span.textContent = partner.name
+            parent.appendChild(span)
+          }
+        }}
+      />
+    </div>
+  )
+}
+
 export default function Partners() {
+  const row1 = partners.slice(0, Math.ceil(partners.length / 2))
+  const row2 = partners.slice(Math.ceil(partners.length / 2))
+
   return (
     <section
       id="collaborations"
@@ -33,46 +63,30 @@ export default function Partners() {
           </p>
         </div>
 
-        {/* Logo grid */}
-        <div
-          className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7 gap-4 lg:gap-6"
-          role="list"
-          aria-label="Partner organizations"
-        >
-          {partners.map((partner) => (
-            <div
-              key={partner.name}
-              role="listitem"
-              className="group flex items-center justify-center p-4 rounded-2xl bg-neutral-50 border border-neutral-100 hover:border-primary-200 hover:bg-primary-50 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md aspect-square"
-              title={partner.name}
-            >
-              <img
-                src={partner.logo}
-                alt={partner.alt}
-                className="w-full h-full object-contain max-h-14 filter grayscale group-hover:grayscale-0 transition-all duration-300 opacity-60 group-hover:opacity-100"
-                loading="lazy"
-                onError={(e) => {
-                  const target = e.target as HTMLImageElement
-                  target.style.display = 'none'
-                  const parent = target.parentElement
-                  if (parent) {
-                    const span = document.createElement('span')
-                    span.className = 'text-xs text-neutral-500 font-medium text-center leading-tight'
-                    span.textContent = partner.name
-                    parent.appendChild(span)
-                  }
-                }}
-              />
-            </div>
-          ))}
+        {/* Carousel rows */}
+        <div className="space-y-4 overflow-hidden carousel-track" role="list" aria-label="Partner organizations">
+
+          {/* Row 1 – scrolls left */}
+          <div className="flex animate-scroll-left w-max">
+            {[...row1, ...row1].map((partner, i) => (
+              <LogoCard key={`r1-${i}`} partner={partner} />
+            ))}
+          </div>
+
+          {/* Row 2 – scrolls right */}
+          <div className="flex animate-scroll-right w-max">
+            {[...row2, ...row2].map((partner, i) => (
+              <LogoCard key={`r2-${i}`} partner={partner} />
+            ))}
+          </div>
         </div>
 
         {/* Count strip */}
         <div className="mt-12 flex flex-wrap items-center justify-center gap-8 text-center">
           {[
-            { value: '6+', label: 'UN Agencies' },
+            { value: '6+',  label: 'UN Agencies' },
             { value: '10+', label: 'International NGOs' },
-            { value: '8+', label: 'Bilateral Donors' },
+            { value: '8+',  label: 'Bilateral Donors' },
             { value: '27+', label: 'Total Partners' },
           ].map((item) => (
             <div key={item.label} className="px-6 py-4 rounded-2xl bg-gradient-subtle border border-primary-100">

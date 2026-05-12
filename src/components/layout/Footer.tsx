@@ -1,14 +1,14 @@
-import { Mail, MapPin, Linkedin, ArrowUp, Heart } from 'lucide-react'
-import { navLinks, about } from '@/data/content'
+import { Mail, MapPin, Linkedin, ArrowUp, Heart } from "lucide-react";
+import { navLinks, about } from "@/data/content";
 
 export default function Footer() {
-  const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' })
+  const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
   const handleNavClick = (href: string) => {
-    if (href.startsWith('#')) {
-      document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' })
+    if (href.startsWith("#")) {
+      document.querySelector(href)?.scrollIntoView({ behavior: "smooth" });
     }
-  }
+  };
 
   return (
     <footer
@@ -19,21 +19,30 @@ export default function Footer() {
       {/* Main footer */}
       <div className="container-custom py-16 lg:py-20">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
-
           {/* Brand column */}
           <div className="lg:col-span-2 space-y-6">
-            <a href="#home" onClick={(e) => { e.preventDefault(); handleNavClick('#home') }} aria-label="Farah Salhab – home">
+            <a
+              href="#home"
+              onClick={(e) => {
+                e.preventDefault();
+                handleNavClick("#home");
+              }}
+              aria-label="Farah Salhab – home"
+            >
               <img
                 src="/assets/images/seo/Gender&InclusionExpert.png"
                 alt="Farah Salhab official logo – Gender and Inclusion Expert"
                 className="h-12 w-auto object-contain brightness-200"
-                onError={(e) => { (e.target as HTMLImageElement).style.display = 'none' }}
+                onError={(e) => {
+                  (e.target as HTMLImageElement).style.display = "none";
+                }}
               />
             </a>
 
             <p className="text-neutral-400 text-sm leading-relaxed max-w-sm">
-              Intersectional feminist and inclusion expert with 12 years of experience advancing
-              gender equality, diversity, and inclusion across MENA and beyond.
+              Intersectional feminist and inclusion expert with 12 years of
+              experience advancing gender equality, diversity, and inclusion
+              across MENA and beyond.
             </p>
 
             {/* Expertise pills */}
@@ -79,7 +88,10 @@ export default function Footer() {
                 <li key={link.href}>
                   <a
                     href={link.href}
-                    onClick={(e) => { e.preventDefault(); handleNavClick(link.href) }}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleNavClick(link.href);
+                    }}
                     className="text-neutral-400 hover:text-white text-sm transition-colors hover:translate-x-1 inline-flex items-center gap-1.5"
                   >
                     <span className="w-1 h-1 rounded-full bg-primary-600 opacity-0 group-hover:opacity-100" />
@@ -106,7 +118,10 @@ export default function Footer() {
                 </span>
               </a>
               <div className="flex items-start gap-3">
-                <MapPin size={16} className="text-primary-400 mt-0.5 shrink-0" />
+                <MapPin
+                  size={16}
+                  className="text-primary-400 mt-0.5 shrink-0"
+                />
                 <span className="text-neutral-400 text-sm">
                   Lebanon, Beirut
                 </span>
@@ -120,14 +135,17 @@ export default function Footer() {
       <div className="border-t border-neutral-800">
         <div className="container-custom py-5 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-neutral-500 text-xs text-center sm:text-left">
-            Copyright © 2024 Farah Salhab · Gender &amp; Inclusion Expert · All rights reserved.
+            Copyright © 2024 Farah Salhab · Gender &amp; Inclusion Expert · All
+            rights reserved.
           </p>
           <div className="flex items-center gap-4">
             <p className="text-neutral-500 text-xs flex items-center gap-1">
-              Made with <Heart size={12} className="text-primary-500 fill-primary-500" /> in Beirut
+              Made with{" "}
+              <Heart size={12} className="text-primary-500 fill-primary-500" />{" "}
+              in Beirut
             </p>
             <a
-              href="https://imanportfolio.netlify.app/"
+              href="https://imandev.netlify.app/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-neutral-500 hover:text-neutral-300 text-xs transition-colors"
@@ -147,5 +165,5 @@ export default function Footer() {
         <ArrowUp size={20} />
       </button>
     </footer>
-  )
+  );
 }
