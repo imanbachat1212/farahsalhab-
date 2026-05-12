@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { navLinks } from "@/data/content";
 
@@ -6,6 +7,8 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
+  const navigate  = useNavigate();
+  const location  = useLocation();
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -40,9 +43,14 @@ export default function Header() {
 
   const handleNavClick = (href: string) => {
     setIsOpen(false);
-    if (href.startsWith("#")) {
-      const el = document.querySelector(href);
-      el?.scrollIntoView({ behavior: "smooth" });
+    if (href.startsWith("/")) {
+      navigate(href);
+    } else if (href.startsWith("#")) {
+      if (location.pathname !== "/") {
+        navigate("/" + href);
+      } else {
+        document.querySelector(href)?.scrollIntoView({ behavior: "smooth" });
+      }
     }
   };
 
@@ -58,10 +66,10 @@ export default function Header() {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <a
-            href="#home"
+            href="/"
             onClick={(e) => {
               e.preventDefault();
-              handleNavClick("#home");
+              handleNavClick(location.pathname === "/" ? "#home" : "/");
             }}
             className="flex items-center gap-3 group"
             aria-label="Farah Salhab – Home"
@@ -82,8 +90,11 @@ export default function Header() {
             className="hidden lg:flex items-center gap-1"
           >
             {navLinks.map((link) => {
-              const sectionId = link.href.replace("#", "");
-              const isActive = activeSection === sectionId;
+              const isRouteLink = link.href.startsWith("/");
+              const sectionId   = link.href.replace("#", "");
+              const isActive    = isRouteLink
+                ? location.pathname === link.href
+                : activeSection === sectionId;
               return (
                 <a
                   key={link.href}

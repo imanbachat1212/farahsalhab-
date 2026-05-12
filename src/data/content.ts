@@ -3,7 +3,7 @@ export const navLinks = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
   { label: "Areas of Expertise", href: "#service" },
-  { label: "Portfolio", href: "#portfolio" },
+  { label: "Portfolio", href: "/portfolio" },
   { label: "Blog", href: "#blog" },
   { label: "Contact", href: "#contact" },
 ];
@@ -401,6 +401,63 @@ export const partners = [
     alt: "Gender and inclusion partnership",
   },
 ];
+
+// ─── Portfolio ─────────────────────────────────────────────────────────────────
+export type PortfolioCategory = 'hands-on' | 'spotlight' | 'voice' | 'contributions'
+
+export const portfolio = [
+  // ── Hands-On Work ──
+  { id:  1, title: 'PUI Gender Analysis & GAP Inception Report',              year: '2026', category: 'hands-on'      as PortfolioCategory, image: '/assets/images/seo/port5.jpg',                                        imageAlt: 'PUI Gender Analysis and GAP Inception Report 2026' },
+  { id:  2, title: 'ACF ARADINA Consortium Gender Analysis Report',            year: '2026', category: 'hands-on'      as PortfolioCategory, image: '/assets/images/seo/port6.jpg',                                        imageAlt: 'ACF ARADINA Consortium Gender Analysis Report 2026' },
+  { id:  3, title: 'Doria Impact Evaluation Executive Summary',                year: '2026', category: 'hands-on'      as PortfolioCategory, image: '/assets/images/seo/doriya.jpg',                                       imageAlt: 'Doria Feminist Fund Impact Evaluation 2026' },
+  { id:  4, title: 'Women Now Psychosocial Evaluation',                        year: '2026', category: 'hands-on'      as PortfolioCategory, image: '/assets/images/seo/womenNow.jpg',                                     imageAlt: 'Women Now Psychosocial Evaluation 2026' },
+  { id:  5, title: 'Women Now Research Paper',                                 year: '2025', category: 'hands-on'      as PortfolioCategory, image: '/assets/images/seo/port22.png',                                       imageAlt: 'Women Now Research Paper 2025' },
+  { id:  6, title: 'Intersectional Perspectives on Climate Change – 20+ Hr Course', year: '2025', category: 'hands-on' as PortfolioCategory, image: '/assets/images/seo/port23.png',                                      imageAlt: 'Intersectional Perspectives on Climate Change Course 2025' },
+  { id:  7, title: 'Doria Impact Evaluation Executive Summary',                year: '2025', category: 'hands-on'      as PortfolioCategory, image: '/assets/images/seo/port25.jpg',                                       imageAlt: 'Doria Feminist Fund Impact Evaluation 2025' },
+  { id:  8, title: 'Doria Inception Report',                                   year: '2024', category: 'hands-on'      as PortfolioCategory, image: '/assets/images/seo/port16.PNG',                                       imageAlt: 'Doria Inception Report 2024' },
+  { id:  9, title: 'Shabake 2 Gender Mainstreaming Training',                  year: '2024', category: 'hands-on'      as PortfolioCategory, image: '/assets/images/seo/shabake2-gender-trainings-2024.jpg',               imageAlt: 'Shabake 2 Gender Mainstreaming Training 2024' },
+  { id: 10, title: 'Haretna Gender Action Plan',                               year: '2024', category: 'hands-on'      as PortfolioCategory, image: '/assets/images/seo/haretna-gender-action-plan-2023.png',              imageAlt: 'Haretna Gender Action Plan 2024' },
+  { id: 11, title: 'IGNITE MENA Context Analysis & Mapping Report',            year: '2024', category: 'hands-on'      as PortfolioCategory, image: '/assets/images/seo/ignite-context-analysis-report-2024.jpeg',         imageAlt: 'IGNITE MENA Context Analysis and Mapping Report 2024' },
+  { id: 12, title: 'IGNITE Inception Report',                                  year: '2024', category: 'hands-on'      as PortfolioCategory, image: '/assets/images/seo/ignite-inception-report-2024.png',                 imageAlt: 'IGNITE Inception Report 2024' },
+  { id: 13, title: 'Haretna Gender Analysis Toolkit',                          year: '2023', category: 'hands-on'      as PortfolioCategory, image: '/assets/images/seo/haretna-gender-training-2023.jpg',                 imageAlt: 'Haretna Gender Analysis Toolkit 2023' },
+  { id: 14, title: '3amaly GEM Tool Report',                                   year: '2023', category: 'hands-on'      as PortfolioCategory, image: '/assets/images/seo/3amaly-gem-tool-report.png',                       imageAlt: '3amaly GEM Tool Report 2023' },
+  { id: 15, title: 'Caritas FPA Training',                                     year: '2023', category: 'hands-on'      as PortfolioCategory, image: '/assets/images/seo/caritas-gender-pfa-training.png',                  imageAlt: 'Caritas FPA Training 2023' },
+  { id: 16, title: 'IRC & LUPD Partnership Evaluation Report',                 year: '2022', category: 'hands-on'      as PortfolioCategory, image: '/assets/images/seo/irc-lupd-partnership-evaluation.png',              imageAlt: 'IRC and LUPD Partnership Evaluation Report 2022' },
+  { id: 17, title: 'Save the Children Gender Analysis Findings Report',        year: '2021', category: 'hands-on'      as PortfolioCategory, image: '/assets/images/seo/save-the-children-gender-analysis.jpeg',           imageAlt: 'Save the Children Gender Analysis Findings Report 2021' },
+
+  // ── In the Spotlight ──
+  { id: 18, title: 'Expertise France – Shabake 2 Gender Capacity Building',    year: '2024', category: 'spotlight'     as PortfolioCategory, image: '/assets/images/seo/expertise-france-gender-capacity-building.jpeg',   imageAlt: 'Expertise France Shabake 2 Gender Capacity Building 2024' },
+  { id: 19, title: 'GAC Partners Forum',                                        year: '2024', category: 'spotlight'     as PortfolioCategory, image: '/assets/images/seo/gac-partners-forum.jpg',                           imageAlt: 'GAC Partners Forum 2024' },
+  { id: 20, title: 'UN Women / WFP Training for MoSA',                         year: '2022', category: 'spotlight'     as PortfolioCategory, image: '/assets/images/seo/unwomen-wfp-mosa-training.jpg',                    imageAlt: 'UN Women WFP Training for MoSA 2022' },
+  { id: 21, title: 'Global Consultancy in Uganda',                              year: '2019', category: 'spotlight'     as PortfolioCategory, image: '/assets/images/seo/uganda-global-consultancy.jpg',                    imageAlt: 'Global Consultancy in Uganda 2019' },
+  { id: 22, title: 'Secondment to Sierra Leone',                                year: '2019', category: 'spotlight'     as PortfolioCategory, image: '/assets/images/seo/secondment-sierra-leone.jpg',                      imageAlt: 'Secondment to Sierra Leone 2019' },
+  { id: 23, title: 'Adolescent Girls\' Achievement Booklet',                    year: '2019', category: 'spotlight'     as PortfolioCategory, image: '/assets/images/seo/adolescent-girls-achievement-booklet-.png',         imageAlt: 'Adolescent Girls Achievement Booklet 2019' },
+  { id: 24, title: 'Travel to Girls\' Rights Booklet',                          year: '2018', category: 'spotlight'     as PortfolioCategory, image: '/assets/images/seo/travel-to-girls-rights-bookle.png',                imageAlt: 'Travel to Girls Rights Booklet 2018' },
+  { id: 25, title: 'IRC Way Day Ambassador – Presentation to 400+ Staff',       year: '2018', category: 'spotlight'     as PortfolioCategory, image: '/assets/images/seo/irc-way-day-ambassador-presentatio.jpg',           imageAlt: 'IRC Way Day Ambassador Presentation 2018' },
+
+  // ── Voice & Vision ──
+  { id: 26, title: 'Silat Wassel: Who Is Time Working Against? Gender & Women\'s Age', year: '2026', category: 'voice' as PortfolioCategory, image: '/assets/images/seo/port28.jpg',                                      imageAlt: 'Silat Wassel Gender and Women Age 2026' },
+  { id: 27, title: 'AUB – GHI Reel: Climate Change & Health in MENA',          year: '2025', category: 'voice'         as PortfolioCategory, image: '/assets/images/seo/AUB.jpg',                                          imageAlt: 'AUB GHI Reel Climate Change Health MENA 2025' },
+  { id: 28, title: 'Contribution to DW e-Think Tank – Safe and Loud Project',  year: '2024', category: 'voice'         as PortfolioCategory, image: '/assets/images/seo/port35.jpg',                                       imageAlt: 'DW e-Think Tank Safe and Loud Project 2024' },
+  { id: 29, title: 'DW: Child Marriages Increase in Lebanon in Pandemic',       year: '2021', category: 'voice'         as PortfolioCategory, image: '/assets/images/seo/child-marriage-pandemic-rise-lebanon-2021.jpg',   imageAlt: 'DW Child Marriages Lebanon Pandemic 2021' },
+  { id: 30, title: 'Women Economic Empowerment Portal – Early Marriage in Lebanon', year: '2021', category: 'voice'     as PortfolioCategory, image: '/assets/images/seo/women-economic-empowerment-marriage-report.PNG',  imageAlt: 'Women Economic Empowerment Early Marriage Lebanon 2021' },
+  { id: 31, title: 'Gender in Service Provision – 8-Part Series',              year: '2021', category: 'voice'         as PortfolioCategory, image: '/assets/images/seo/save-the-children-gender-service-serie.png',       imageAlt: 'Gender in Service Provision 8-Part Series Save the Children 2021' },
+  { id: 32, title: 'Al Hurra: Fear & Anxiety Surround the Children of Lebanon', year: '2021', category: 'voice'        as PortfolioCategory, image: '/assets/images/seo/alhurra-give-us-peace-children-lebanon.jpg',        imageAlt: 'Al Hurra Children Lebanon 2021' },
+  { id: 33, title: 'NowLebanon: Breaking the Chains of Silence',               year: '2021', category: 'voice'         as PortfolioCategory, image: '/assets/images/seo/nowlebanon-breaking-chains-of-silence.jpg',        imageAlt: 'NowLebanon Breaking Chains of Silence 2021' },
+  { id: 34, title: 'The WPE Podcast: Spotlight on Lebanon – Programs with Girls', year: '2020', category: 'voice'      as PortfolioCategory, image: '/assets/images/seo/wpe-podcast-spotlight-lebanon-girls.jpg',          imageAlt: 'WPE Podcast Spotlight Lebanon Girls Programming 2020' },
+  { id: 35, title: 'Drive Time Show Podcast: Child Marriage',                   year: '2020', category: 'voice'         as PortfolioCategory, image: '/assets/images/seo/drive-time-show-child-marriage.png',               imageAlt: 'Drive Time Show Podcast Child Marriage 2020' },
+  { id: 36, title: 'Annahar: My Voice, Our Equal Future',                       year: '2020', category: 'voice'         as PortfolioCategory, image: '/assets/images/seo/annahar-my-voice-equal-future.jpg',               imageAlt: 'Annahar My Voice Our Equal Future 2020' },
+  { id: 37, title: 'International Day of the Girl',                             year: '2019', category: 'voice'         as PortfolioCategory, image: '/assets/images/seo/international-day-of-the-girl-blog.png',           imageAlt: 'International Day of the Girl 2019' },
+  { id: 38, title: '16 Days of Activism Against Gender-Based Violence Blog',    year: '2019', category: 'voice'         as PortfolioCategory, image: '/assets/images/seo/16-days-activism-gender-blog.jpg',                 imageAlt: '16 Days of Activism Blog 2019' },
+
+  // ── Contributions ──
+  { id: 39, title: 'Girls Not Brides Multi-Media Project',                      year: '2020', category: 'contributions' as PortfolioCategory, image: '/assets/images/seo/girls-not-brides-media-project.jpg',              imageAlt: 'Girls Not Brides Multi-Media Project 2020' },
+  { id: 40, title: 'Child Marriage in Emergency Context – Panel Discussion',    year: '2020', category: 'contributions' as PortfolioCategory, image: '/assets/images/seo/panel-discussion-child-marriage.png',             imageAlt: 'Child Marriage in Emergency Context Panel Discussion' },
+  { id: 41, title: 'Girl Shine Life Skills Curriculum',                         year: '2019', category: 'contributions' as PortfolioCategory, image: '/assets/images/seo/girl-shine-curriculum.png',                       imageAlt: 'Girl Shine Life Skills Curriculum' },
+  { id: 42, title: 'My Safety, My Wellbeing Curriculum',                        year: '2019', category: 'contributions' as PortfolioCategory, image: '/assets/images/seo/My Safety, My Wellbeing Curriculum.png',          imageAlt: 'My Safety My Wellbeing Curriculum IRC' },
+  { id: 43, title: 'Life-Skills through Drama Curriculum',                      year: '2019', category: 'contributions' as PortfolioCategory, image: '/assets/images/seo/life-skills-drama-curriculum.jpg',                imageAlt: 'Life Skills through Drama Curriculum IRC' },
+  { id: 44, title: 'Syrian Refugees in Northern Lebanon – Learn to Live on $4 a Day', year: '2014', category: 'contributions' as PortfolioCategory, image: '/assets/images/seo/syrian-refugees-lebanon-4usd-living.jpg', imageAlt: 'Syrian Refugees Northern Lebanon 2014' },
+]
 
 // ─── Blog Posts ────────────────────────────────────────────────────────────────
 export const blogPosts = [
